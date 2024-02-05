@@ -368,13 +368,16 @@ export interface ApiVideoVideo extends Schema.CollectionType {
     singularName: 'video';
     pluralName: 'videos';
     displayName: 'Video';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
-    description: Attribute.Blocks;
+    Name: Attribute.String & Attribute.Required & Attribute.Unique;
+    Video: Attribute.Media & Attribute.Required;
+    Subtitles: Attribute.Media & Attribute.Required;
+    RAW: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
