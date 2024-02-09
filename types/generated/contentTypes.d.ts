@@ -380,6 +380,8 @@ export interface ApiVideoVideo extends Schema.CollectionType {
     RAW: Attribute.Text;
     Audio: Attribute.Media;
     Screenshots: Attribute.Media;
+    Language: Attribute.Enumeration<['ENG', 'RU']>;
+    Shots_transitions: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

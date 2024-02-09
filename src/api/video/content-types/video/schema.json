@@ -43,6 +43,35 @@
       "type": "text"
     },
     "Audio": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Screenshots": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Language": {
+      "type": "enumeration",
+      "enum": [
+        "ENG",
+        "RU"
+      ]
+    },
+    "Shots_transitions": {
       "allowedTypes": [
         "images",
         "files",
@@ -51,16 +80,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "Screenshots": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     }
   }
 }
