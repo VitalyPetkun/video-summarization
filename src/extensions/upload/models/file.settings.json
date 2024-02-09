@@ -1,0 +1,9 @@
+{
+  "lifecycles": [
+    "beforeCreate",
+    "afterCreate",
+    "beforeUpdate",
+    "afterUpdate",
+    "beforeDestroy"
+  ]
+}
