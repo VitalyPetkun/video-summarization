@@ -382,7 +382,7 @@ export interface ApiStepsSteps extends Schema.CollectionType {
         minLength: 5;
         maxLength: 250;
       }>;
-    Comment: Attribute.Text;
+    Instructions: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
