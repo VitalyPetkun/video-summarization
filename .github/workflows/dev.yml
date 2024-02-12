@@ -17,6 +17,9 @@ jobs:
       - name: pull
         run: git pull
 
+      - name: npm i
+        run: npm i
+
       - name: npm run build
         run: npm run build      
 
