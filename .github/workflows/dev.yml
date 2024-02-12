@@ -15,10 +15,13 @@ jobs:
         run: source ~/.bashrc
 
       - name: nvm change version
+        run: echo "$(whoami)"  
+
+      - name: nvm change version
         run: nvm use 20  
 
       - name: nvm change version
-        run: echo echo "$(node -v)"
+        run: echo "$(node -v)"
 
       - name: npm i
         run: npm i
