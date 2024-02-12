@@ -21,4 +21,5 @@ jobs:
         run: sudo bash kill
 
       - name: npm run start
-        run: npm run start       
+        run: nohup npm run start &
+    
