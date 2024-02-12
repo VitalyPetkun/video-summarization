@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
+      - name: nvm change version
+        run: nvm use 20
+
       - name: npm i
         run: npm i
 
