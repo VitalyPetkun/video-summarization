@@ -16,6 +16,6 @@ jobs:
           git pull
           npm install
           npm run build
-          sudo bash kill
-          sudo bash start
+          pm2 delete videosummary
+          pm2 --name videosummary start npm -- start
     
