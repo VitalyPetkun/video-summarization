@@ -11,5 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
-      - name: Build
-        run: echo "$(pwd)"
+      - name: npm i
+        run: npm i
+
+      - name: npm run build
+        run: npm run build      
+
+      - name: kill previous server
+        run: sudo bash kill
+
+      - name: npm run start
+        run: npm run start       
