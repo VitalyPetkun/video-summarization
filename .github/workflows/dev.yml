@@ -9,8 +9,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@main 
-
       - name: cd to folder
         run: cd /home/server/reps/summary/video-summarization
 
