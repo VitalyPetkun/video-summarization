@@ -420,7 +420,7 @@ export interface ApiVideoVideo extends Schema.CollectionType {
         minLength: 5;
         maxLength: 250;
       }>;
-    Video: Attribute.Media & Attribute.Required;
+    Video: Attribute.Media;
     Subtitles: Attribute.Media;
     RAW: Attribute.Text &
       Attribute.SetMinMaxLength<{
@@ -431,6 +431,7 @@ export interface ApiVideoVideo extends Schema.CollectionType {
     Screenshots: Attribute.Media;
     Language: Attribute.Enumeration<['ENG', 'RU']>;
     Shots_transitions: Attribute.Media;
+    Video_url: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

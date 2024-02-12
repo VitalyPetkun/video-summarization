@@ -22,7 +22,7 @@
     "Video": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "files",
         "videos"
@@ -73,6 +73,9 @@
       "allowedTypes": [
         "files"
       ]
+    },
+    "Video_url": {
+      "type": "text"
     }
   }
 }
