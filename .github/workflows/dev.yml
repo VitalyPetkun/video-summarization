@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
+      - name: test nvm command
+        shell: bash -l -eo pipefail {0}
+        run: nvm ls
+
       - name: nvm change version
         run: source ~/.bashrc
 
