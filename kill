@@ -5,10 +5,12 @@ PID=$(sudo lsof -t -i:1337)
 # Check if the PID is found
 if [ -z "$PID" ]; then
   echo "No process found running on port 1337."
+  pause 5
   nohup npm run start >/dev/null 2>&1 &
 else
   # Kill the process using the PID
   sudo kill $PID
   echo "Process running on port 3000 with PID $PID has been terminated."
+  pause 10
   nohup npm run start >/dev/null 2>&1 &
 fi
