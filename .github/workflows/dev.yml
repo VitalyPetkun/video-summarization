@@ -17,5 +17,4 @@ jobs:
           npm install
           npm run build
           sudo bash kill
-          sudo bash start
     
