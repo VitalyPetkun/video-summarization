@@ -12,17 +12,16 @@ jobs:
       - uses: actions/checkout@main
 
       - name: test nvm command
-        shell: bash -l -eo pipefail {0}
-        run: nvm ls
+        run: export NVM_DIR="$HOME/.nvm"
 
-      - name: nvm change version
-        run: source ~/.bashrc
-
-      - name: nvm change version
-        run: echo "$(whoami)"
+      - name: test nvm command
+        run: source "$NVM_DIR/nvm.sh"
 
       - name: nvm change version
         run: echo "$(node -v)"
+
+      - name: nvm change version
+        run: echo "$(nvm list)"  
 
       - name: npm i
         run: npm i
