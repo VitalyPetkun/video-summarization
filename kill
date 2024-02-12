@@ -1,0 +1,12 @@
+  GNU nano 6.2                                                 kkk                                                          
+# Find the process ID (PID) using port 3000
+PID=$(sudo lsof -t -i:1337)
+
+# Check if the PID is found
+if [ -z "$PID" ]; then
+  echo "No process found running on port 3000."
+else
+  # Kill the process using the PID
+  sudo kill $PID
+  echo "Process running on port 3000 with PID $PID has been terminated."
+fi
