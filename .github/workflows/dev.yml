@@ -10,7 +10,10 @@ jobs:
 
     steps:
       - name: cd to folder
-        run: cd /home/server/reps/summary/video-summarization
+        run: cd /home/server/reps/video-summarization
+
+      - name: pull
+        run: git reset --hard origin/main  
 
       - name: pull
         run: git pull
