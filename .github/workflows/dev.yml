@@ -11,9 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
-      - name: install nvm
-        run: curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+      - name: install nvm 
+        run: curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 
+      - name: install nvm
+        run: source ~/.bashrc
+        
       - name: install nvm
         run: nvm install 20   
 
