@@ -11,8 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@main 
 
-      - name: npm i
-        run: npm i
+      - name: cd to folder
+        run: cd /home/server/reps/summary/video-summarization
+
+      - name: pull
+        run: git pull
 
       - name: npm run build
         run: npm run build      
