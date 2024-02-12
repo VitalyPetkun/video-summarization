@@ -11,17 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@main
 
-      - name: test nvm command
-        run: export NVM_DIR="$HOME/.nvm"
+      - name: install nvm
+        run: curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
-      - name: test nvm command
-        run: source "$NVM_DIR/nvm.sh"
-
-      - name: nvm change version
-        run: echo "$(node -v)"
-
-      - name: nvm change version
-        run: echo "$(nvm list)"  
+      - name: install nvm
+        run: nvm install 20   
 
       - name: npm i
         run: npm i
